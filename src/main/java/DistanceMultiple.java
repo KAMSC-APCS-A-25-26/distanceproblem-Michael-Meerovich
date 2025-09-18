@@ -33,8 +33,7 @@ import java.util.Scanner;
 public class DistanceMultiple {
     public static void main(String[] args) {
 //Signature
-        System.out.println("Michael Meerovich");
-        System.out.println ("APCS-A\nLewis 2.8 Distance Program\n\n");
+        System.out.println("Michael Meerovich\nAPCS-A\nLewis 2.8 Distance Program\n\n");
 
         //Declare Variables
         double x1, x2, y1, y2, numruns, distance;
