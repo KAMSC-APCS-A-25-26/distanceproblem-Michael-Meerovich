@@ -32,7 +32,44 @@ import java.util.Scanner;
 
 public class DistanceMultiple {
     public static void main(String[] args) {
+//Signature
+        System.out.println("Michael Meerovich");
+        System.out.println ("APCS-A\nLewis 2.8 Distance Program\n\n");
 
+        //Declare Variables
+        double x1, x2, y1, y2, numruns, distance;
+
+        //Create Scanner Input
+        Scanner sc = new Scanner(System.in);
+
+        //Prompt the user for the number of runs
+        System.out.print("How many runs should the program have?  ");
+        numruns = sc.nextDouble();
+        System.out.println ();
+        System.out.println ();
+
+        //Repeat the Program
+        for (int k = 0; k < numruns; k++)
+        {
+            //Tell Scanner to treat (, ) and Spaces as delimeters
+            sc.useDelimiter("[(),\\s]+");
+
+            //Input values
+            System.out.print ("Input both sets of coordinates:  ");
+            x1 = sc.nextInt();
+            y1 = sc.nextInt();
+            x2 = sc.nextInt();
+            y2 = sc.nextInt();
+            System.out.println();
+
+            //Do the math
+            distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+            //Output the answer
+            System.out.println("The distance is " + distance);
+            System.out.println();
+            System.out.println();
+        }
 
     }
 
